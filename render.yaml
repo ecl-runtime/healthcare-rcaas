@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: healthcare-rcaas
+    env: node
+    plan: free
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        value: https://rwpmechockzqvmboywpx.supabase.co
+      - key: SUPABASE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ3cG1lY2hvY2t6cXZtYm95d3B4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg4MDUxNzksImV4cCI6MjA4NDM4MTE3OX0.eNP0jQXL7UiAFTDyD9sTIS7BnQilsXVcJPSBOj4RBkQ
+      - key: OLLAMA_API
+        value: http://localhost:11434
+      - key: PORT
+        value: 3000
